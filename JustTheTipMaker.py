@@ -38,8 +38,8 @@ def create_final_image():
     print(f"Final image saved as '{output_path}'")
 
 # Define the positions where the images will be placed
-positions = [(28, 0)]
-sizes = [(768, 1024)]
+positions = [(0, 0)]
+sizes = [(796, 1024)]
 images = {}
 
 # Create the main window
@@ -56,7 +56,7 @@ frame = tk.Frame(root, padx=10, pady=10)
 frame.pack(fill=tk.BOTH, expand=True)
 
 # Load and resize the predetermined image
-image_path = 'tips.png'  # Replace with the path to your image file
+image_path = 'ttemplate.png'  # Replace with the path to your image file
 image = Image.open(image_path)
 image = image.resize((398, 512))  # Resize the image
 image_tk = ImageTk.PhotoImage(image)

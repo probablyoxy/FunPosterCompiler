@@ -38,8 +38,8 @@ def create_final_image():
     print(f"Final image saved as '{output_path}'")
 
 # Define the positions where the images will be placed
-positions = [(0, 0), (346, 0), (733, 58), (322, 620), (632, 320)]
-sizes = [(341, 455), (285, 380), (182, 243), (273, 364), (372, 496)]
+positions = [(1, 2), (348, 2), (641, 59), (184, 621), (633, 321)]
+sizes = [(338, 554), (280, 555), (274, 242), (411, 365), (370, 670)]
 images = {}
 
 # Create the main window
@@ -56,7 +56,7 @@ frame = tk.Frame(root, padx=10, pady=10)
 frame.pack(fill=tk.BOTH, expand=True)
 
 # Load and resize the predetermined image
-image_path = 'posters.png'  # Replace with the path to your image file
+image_path = 'ptemplate.png'  # Replace with the path to your image file
 image = Image.open(image_path)
 image = image.resize((512, 512))  # Resize the image
 image_tk = ImageTk.PhotoImage(image)

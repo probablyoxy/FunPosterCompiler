@@ -30,7 +30,7 @@ def create_final_image():
     if not output_folder.get():
         print("Please select an output folder.")
         return
-    background = Image.open('posters.png')
+    background = Image.open('tips.png')
     for position, img in images.items():
         background.paste(img, positions[position])
     output_path = get_next_filename(output_folder.get())
@@ -38,8 +38,8 @@ def create_final_image():
     print(f"Final image saved as '{output_path}'")
 
 # Define the positions where the images will be placed
-positions = [(0, 0)]
-sizes = [(341, 455)]
+positions = [(28, 0)]
+sizes = [(768, 1024)]
 images = {}
 
 # Create the main window
